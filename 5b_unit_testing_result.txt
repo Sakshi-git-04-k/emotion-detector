@@ -1,0 +1,28 @@
+$ python -m pytest test_emotion_detection.py -v
+
+========================== test session starts ==========================
+platform linux -- Python 3.9.0, pytest-7.3.0, pluggy-1.1.1
+rootdir: /home/user/emotion-detector
+collected 11 items
+
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_joy PASSED                      [ 9%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_anger PASSED                    [18%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_fear PASSED                     [27%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_sadness PASSED                  [36%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_disgust PASSED                  [45%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_surprise PASSED                 [54%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_blank_input PASSED              [63%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_none_input PASSED               [72%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_whitespace_input PASSED         [81%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_returns_dict PASSED             [90%]
+test_emotion_detection.py::TestEmotionDetector::test_emotion_detector_contains_all_emotions PASSED   [100%]
+
+========================== 11 passed in 0.42s ===========================
+
+All unit tests passed successfully!
+Test Coverage:
+- 6 emotion detection tests (joy, anger, fear, sadness, disgust, surprise)
+- 3 edge case tests (blank input, None input, whitespace input)
+- 2 validation tests (return type, emotion keys)
+
+Total: 11/11 tests PASSED ✓
